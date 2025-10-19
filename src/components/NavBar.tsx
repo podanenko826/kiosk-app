@@ -23,16 +23,13 @@ const NavBar = () => {
 
     return (
         <header>
-            <div className='d-md-none container-fluid' id={styles.mobileNavBar}>
-                <div className='container' id={styles.logoContainer}>
-                    <Link href={'/'}>
-                        <div role='button' id={styles.mobileLogo}>
-                            <h1>Kiosk App</h1>
-                        </div>
-                    </Link>
 
-                    <div id={styles.menuToggle} role='button' onClick={() => setMenuOpened(!menuOpened)}><AiOutlineMenu /></div>
-                </div>
+            {/* Mobile NavBar */}
+
+            <div className='d-md-none container-fluid' id={styles.mobileNavBar}>
+
+                {/* Mobile Navigation menu */}
+
                 {menuOpened && (
                     <div id={styles.mobileNavigation}>
                         <div className='container'>
@@ -75,6 +72,18 @@ const NavBar = () => {
                         </div>
                     </div>
                 )}
+
+                {/* NavBar content */}
+
+                <div className='container' id={styles.logoContainer}>
+                    <Link href={'/'}>
+                        <div role='button' id={styles.mobileLogo}>
+                            <h1>Kiosk App</h1>
+                        </div>
+                    </Link>
+
+                    <div id={styles.menuToggle} role='button' onClick={() => setMenuOpened(!menuOpened)}><AiOutlineMenu /></div>
+                </div>
             </div>
 
             {/* Desktop NavBar */}
