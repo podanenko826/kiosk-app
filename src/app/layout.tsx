@@ -4,6 +4,7 @@ import "./globals.css";
 
 import  "bootstrap/dist/css/bootstrap.min.css"
 import PromoBar from "@/components/PromoBar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <PromoBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
