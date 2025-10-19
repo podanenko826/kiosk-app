@@ -1,0 +1,35 @@
+#promoBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 8px 0;
+    column-gap: 8px;
+
+    line-height: 20px;
+
+    background: rgb(68, 65, 65);
+
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    #promoBar {
+        font-size: 21px;
+        padding: 12px 0;
+        line-height: unset;
+    }
+}
+
+#promoBar > p {
+    margin: 0;
+
+    color: white;
+}
+
+#announcementDesc {
+    color: rgb(161, 194, 104) !important;
+}
